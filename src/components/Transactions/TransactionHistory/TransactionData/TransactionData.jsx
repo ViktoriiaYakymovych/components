@@ -1,9 +1,11 @@
+import { TableData } from "./TransactionData.styled";
+
 export const TransactionData = ({item: {type, amount, currency}}) => {
     return (
       <>
-        <td>{type}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
+        <TableData>{type}</TableData>
+        <TableData>{amount}</TableData>
+        <TableData>{currency}</TableData>
       </>
     );
 }
