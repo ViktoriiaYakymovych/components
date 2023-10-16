@@ -8,11 +8,11 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   const viewsToString = views.toString().split('');
-  const viewsAddedComa =
-    viewsToString.length < 5
-      ? viewsToString.splice(1, 0, ',')
-      : viewsToString.splice(2, 0, ',');
-      
+  console.log(viewsToString.splice(1,0, ','));
+  // const viewsAddedComa =
+  //   viewsToString.length < 5
+  //     ? viewsToString.splice(1, 0, ',')
+  //     : viewsToString.splice(2, 0, ',');
   return (
     <ProfileWrapper>
       <UserWrapper>
